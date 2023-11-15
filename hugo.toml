@@ -1,0 +1,4 @@
+baseURL = 'https://dawsonkinsman.org/'
+languageCode = 'en-us'
+title = 'Dawson Kinsman'
+theme = 'hugo-theme-console'
