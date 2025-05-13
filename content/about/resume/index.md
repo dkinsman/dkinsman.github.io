@@ -1,6 +1,6 @@
 ---
 type: _default
-layout: single
+layout: parent
 url: /about/resume/
 menu:
     about:
@@ -13,10 +13,10 @@ _build:
 ---
 <style>
 .fullscreen-embed-container {
-  margin: 10;
-  padding: 10;
-  width: 100vw;
-  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 95vw;
+  height: 95vh;
   position: relative;
   /* left: 50%;
   right: 50%; */
@@ -32,5 +32,5 @@ _build:
 </style>
 
 <div class="fullscreen-embed-container">
-  <embed src="/kinsman_resume.pdf" type="application/pdf">
+  <embed src="/files/resume.pdf" type="application/pdf">
 </div>

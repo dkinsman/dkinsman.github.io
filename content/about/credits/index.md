@@ -1,6 +1,6 @@
 ---
 type: _default
-layout: single
+layout: parent
 url: /about/credit/
 menu:
     about:

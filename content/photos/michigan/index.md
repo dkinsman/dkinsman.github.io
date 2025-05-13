@@ -1,10 +1,11 @@
 ---
 type: _default
-layout: single
+layout: single_v1
 url: /photos/michigan/
 menu:
-  # main:
-    weight: 3
+  main:
+    parent: photos
+    weight: 1
     identifier: michigan
     title: Michigan
 unifiedAlt: 'Dawson Kinsman'
