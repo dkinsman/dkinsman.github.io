@@ -2,12 +2,11 @@
 type: _default
 layout: single
 url: /about/credit/
-# menu:
-#   main:
-#     parent: About
-#     weight: 1
-#     identifier: resume
-#     title: Resume
+menu:
+    about:
+      weight: 2
+      identifier: credits
+      title: Acknowledgements
 unifiedAlt: 'Dawson Kinsman'
 _build:
   publishResources: false

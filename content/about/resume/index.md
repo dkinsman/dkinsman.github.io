@@ -2,12 +2,11 @@
 type: _default
 layout: single
 url: /about/resume/
-# menu:
-#   main:
-#     parent: About
-#     weight: 1
-#     identifier: resume
-#     title: Resume
+menu:
+    about:
+        weight: 1
+        identifier: resume
+        title: Resume
 unifiedAlt: 'Dawson Kinsman'
 _build:
   publishResources: false

@@ -1,12 +1,12 @@
 ---
 type: _default
 layout: single
-url: /michigan/
+url: /photos/travels/
 menu:
   main:
-    weight: 2
-    identifier: michigan
-    title: Michigan
+    # weight: 3
+    identifier: travels
+    title: Travels
 unifiedAlt: 'Dawson Kinsman'
 _build:
   publishResources: false
