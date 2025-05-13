@@ -1,6 +1,6 @@
 ---
 type: _default
-layout: single_v1
+layout: single
 url: /photos/michigan/
 menu:
   main:

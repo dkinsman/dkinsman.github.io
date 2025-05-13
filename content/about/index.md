@@ -1,12 +1,12 @@
 ---
 type: _default
-layout: single_v1
+layout: single
 url: /
 menu:
   main:
     weight: 1
     identifier: about
-    title: About
+    title: about
 unifiedAlt: 'Dawson Kinsman'
 _build:
   publishResources: false

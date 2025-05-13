@@ -6,7 +6,7 @@ menu:
   main:
     weight: 2
     identifier: photos
-    title: Photos
+    title: photos
 unifiedAlt: 'Dawson Kinsman'
 _build:
   publishResources: false

@@ -1,6 +1,6 @@
 ---
 type: _default
-layout: parent
+layout: single
 url: /about/resume/
 menu:
     about:
