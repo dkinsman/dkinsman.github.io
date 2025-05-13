@@ -1,10 +1,10 @@
 ---
 type: _default
 layout: single
-url: /
+url: /michigan/
 menu:
   main:
-    weight: 1
+    weight: 2
     identifier: michigan
     title: Michigan
 unifiedAlt: 'Dawson Kinsman'

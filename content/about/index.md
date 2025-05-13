@@ -1,10 +1,10 @@
 ---
 type: _default
 layout: single
-url: /about/
+url: /
 menu:
   main:
-    weight: 4
+    weight: 1
     identifier: about
     title: About
 unifiedAlt: 'Dawson Kinsman'
@@ -12,8 +12,11 @@ _build:
   publishResources: false
 ---
 
-Not a photographer, but I enjoy taking pictures. This is a place to share some of my core memories.
+Not a photographer, instead a broke grad student at <u>[Michigan State University](https://msu.edu)</u> in <u>[Computational Mathematics, Science and Engineering](https://cmse.msu.edu)</u>. Grateful to be working with Danny Caballero and folks in the Computational Education Research Lab.
 
-Original site design by <u>[Tyler McRobert](https://tylermcrobert.com)</u>. 
 
-&copy; {{< year >}} <u>[Sped0n](https://github.com/Sped0n)</u> | Built with Hugo and the <u>[Bridget](https://github.com/Sped0n/bridget)</u> theme.
+<u>[Resume](/about/resume/)</u> 
+
+<u>[Acknowledgments](/about/credit/)</u>
+
+My favorite picture at the moment:
