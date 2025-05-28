@@ -11,9 +11,7 @@ enableRobotsTXT = true
 defaultContentLanguage = 'en'
 
 # theme as module
-[module]
-  [[module.imports]]
-    path = "github.com/dkinsman/bridget" # deploy with git (recommended)  WARN: you should also set `bundled` to true in params.toml !!!
+theme = "bridget" # deploy with git (recommended)  WARN: you should also set `bundled` to true in params.toml !!!
 
 [caches]
   [caches.images]
