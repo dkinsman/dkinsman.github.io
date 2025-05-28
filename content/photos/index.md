@@ -1,7 +1,7 @@
 ---
 type: _default
-layout: parent
-url: /photos/
+layout: text_page
+url: /photos
 menu:
   main:
     weight: 2
@@ -14,6 +14,6 @@ _build:
 
 Collections:
 
-<u>[Michigan](/photos/michigan)</u> 
+<u>[michigan](/photos/michigan)</u> 
 
-<u>[Travels](/photos/travels)</u>
+<u>[travels](/photos/travels)</u>

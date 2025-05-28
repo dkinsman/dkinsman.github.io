@@ -3,9 +3,9 @@ type: _default
 layout: single
 url: /photos/travels/
 menu:
-  main:
+  photos:
     parent: photos
-    weight: 
+    weight: 2
     identifier: travels
     title: Travels
 unifiedAlt: 'Dawson Kinsman'

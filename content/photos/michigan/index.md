@@ -3,7 +3,7 @@ type: _default
 layout: single
 url: /photos/michigan/
 menu:
-  main:
+  photos:
     parent: photos
     weight: 1
     identifier: michigan

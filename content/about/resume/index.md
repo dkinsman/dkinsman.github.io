@@ -1,10 +1,11 @@
 ---
 type: _default
-layout: single
+layout: text_page
 url: /about/resume/
 menu:
     about:
         weight: 1
+        parent: about
         identifier: resume
         title: Resume
 unifiedAlt: 'Dawson Kinsman'
@@ -15,7 +16,7 @@ _build:
 .fullscreen-embed-container {
   margin: 0;
   padding: 0;
-  width: 95vw;
+  width: 98vw;
   height: 95vh;
   position: relative;
   /* left: 50%;
