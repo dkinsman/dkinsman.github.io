@@ -1,12 +1,12 @@
 ---
 type: _default
 layout: text_page
-url: /about/resume/
+url: /research/cv/
 menu:
-    about:
+    research:
         weight: 1
-        identifier: resume
-        title: resume
+        identifier: cv
+        title: cv
 unifiedAlt: 'Dawson Kinsman'
 _build:
   publishResources: false
@@ -32,5 +32,5 @@ _build:
 </style>
 
 <div class="fullscreen-embed-container">
-  <embed src="/files/resume.pdf" type="application/pdf">
+  <embed src="/files/cv.pdf" type="application/pdf">
 </div>

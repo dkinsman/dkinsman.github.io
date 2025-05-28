@@ -4,7 +4,7 @@ layout: text_page
 url: /photos
 menu:
   main:
-    weight: 2
+    weight: 3
     identifier: photos
     title: photos
 unifiedAlt: 'Dawson Kinsman'

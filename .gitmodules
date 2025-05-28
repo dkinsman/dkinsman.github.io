@@ -1,3 +1,3 @@
 [submodule "themes/bridget"]
-	path = /home/runner/work/dkinsman.github.io/dkinsman.github.io/themes
+	path = /themes/bridget
 	url = https://github.com/dkinsman/bridget
