@@ -1,6 +1,6 @@
 ---
 type: _default
-layout: text_page
+layout: single
 url: /about/credit/
 menu:
     about:
