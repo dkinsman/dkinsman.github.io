@@ -50,6 +50,16 @@ _build:
 
 I am a PhD student at <u>[Michigan State University](https://msu.edu)</u> in the <u>[Computational Mathematics, Science and Engineering](https://cmse.msu.edu)</u> department. I am grateful to be working with <u>[Danny Caballero](https://dannycaballero.info)</u> and folks from the <u>[Computational Education Research Lab](https://msu-cerl.github.io)</u>.
 
+  </div>
+    <div class="about-image">
+      <img src="/files/me.png" alt="Dawson Kinsman">
+    </div>
+
+  </div>
+
+<div class="about-wrapper">
+
+  <div class="about-text">
 <h6>More about me:</h6>
 
 [resume ↘︎](/about/resume/)
@@ -61,9 +71,5 @@ I am a PhD student at <u>[Michigan State University](https://msu.edu)</u> in the
 [github ↗](https://github.com/dkinsman) | 
 [linkedin ↗](https://www.linkedin.com/in/dawson-kinsman-a677951b4/) | 
 [email ↗](mailto:dkinsman@msu.edu)
-  </div>
-    <div class="about-image">
-      <img src="/files/me.png" alt="Dawson Kinsman">
-    </div>
-
-  </div>
+</div>
+</div>
