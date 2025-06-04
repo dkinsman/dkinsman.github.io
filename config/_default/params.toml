@@ -66,3 +66,5 @@ No_cookie = true
 Do_not_track = true
 # token(optional), more info on https://splitbee.io/docs/embed-the-script
 data_token = ""
+
+bundled = true
