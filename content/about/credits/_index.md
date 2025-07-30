@@ -4,7 +4,6 @@ layout: text_page
 url: /about/credit/
 menu:
     about:
-      parent: about
       weight: 2
       identifier: credits
       title: Acknowledgements
