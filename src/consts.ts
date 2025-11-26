@@ -1,11 +1,11 @@
 import type { IconMap, SocialLink, Site } from '@/types'
 
 export const SITE: Site = {
-  title: 'astro-erudite',
+  title: 'Dawson Kinsman',
   description:
-    'astro-erudite is a opinionated, unstyled blogging template—built with Astro, Tailwind, and shadcn/ui.',
-  href: 'https://astro-erudite.vercel.app',
-  author: 'jktrn',
+    'personal website.',
+  href: 'https://dkinsman.github.io',
+  author: 'dawson',
   locale: 'en-US',
   featuredPostCount: 2,
   postsPerPage: 3,
@@ -17,32 +17,36 @@ export const NAV_LINKS: SocialLink[] = [
     label: 'blog',
   },
   {
-    href: '/authors',
-    label: 'authors',
+    href: '/photos',
+    label: 'photos',
   },
-  {
-    href: '/about',
-    label: 'about',
-  },
+  // {
+  //   href: '/about',
+  //   label: 'about',
+  // },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    href: 'https://github.com/jktrn',
+    href: 'https://github.com/dkinsman',
     label: 'GitHub',
   },
   {
-    href: 'https://twitter.com/enscry',
-    label: 'Twitter',
-  },
-  {
-    href: 'mailto:jason@enscribe.dev',
+    href: 'mailto:dkinsman@msu.edu',
     label: 'Email',
   },
   {
-    href: '/rss.xml',
-    label: 'RSS',
+    href: "https://www.linkedin.com/in/dawson-kinsman-a677951b4/",
+    label: "LinkedIn"
   },
+  {
+    href:'https://orcid.org/0009-0007-5703-5027',
+    label:"Library"
+  }
+  // {
+  //   href: '/rss.xml',
+  //   label: 'RSS',
+  // },
 ]
 
 export const ICON_MAP: IconMap = {
@@ -52,4 +56,5 @@ export const ICON_MAP: IconMap = {
   Twitter: 'lucide:twitter',
   Email: 'lucide:mail',
   RSS: 'lucide:rss',
+  Library: "lucide:library-big"
 }
