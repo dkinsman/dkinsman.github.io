@@ -4,7 +4,7 @@ export const SITE: Site = {
   title: 'Dawson Kinsman',
   description:
     'personal website.',
-  href: 'https://dkinsman.github.io/',
+  href: 'https://dkinsman.github.io',
   author: 'dawson',
   locale: 'en-US',
   featuredPostCount: 2,
