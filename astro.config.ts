@@ -20,6 +20,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   site: 'https://dkinsman.github.io/',
+  base: '/', 
   integrations: [
     expressiveCode({
       themes: ['github-light', 'github-dark'],
