@@ -1,0 +1,29 @@
+---
+import PageHead from '@/components/PageHead.astro'
+import { SITE } from '@/consts'
+import Layout from '@/layouts/Layout-center.astro'
+import { getAllPosts, groupPostsByYear } from '@/lib/data-utils'
+import type { PaginateFunction } from 'astro'
+
+export async function getStaticPaths({
+  paginate,
+}: {
+  paginate: PaginateFunction
+}) {
+  const allPosts = await getAllPosts()
+  return paginate(allPosts, { pageSize: SITE.postsPerPage })
+}
+
+const { page } = Astro.props
+---
+
+<Layout class="max-w-3xl h-190 w-screen">
+<!--
+Source - https://stackoverflow.com/a
+Posted by Batfan, modified by community. See post 'Timeline' for change history
+Retrieved 2025-12-01, License - CC BY-SA 4.0
+-->
+
+<embed src="files/resume.pdf" with="100%" height="100%">
+
+</Layout>

@@ -4,17 +4,17 @@ import Link from '@/components/Link.astro'
 import PageHead from '@/components/PageHead.astro'
 import { buttonVariants } from '@/components/ui/button'
 import { SITE } from '@/consts'
-import Layout from '@/layouts/Layout.astro'
-import { getRecentPosts } from '@/lib/data-utils'
+import Layout from '@/layouts/Layout-center.astro'
 import { Image } from 'astro:assets'
 import Carousel from '@/components/Carousel.astro'
-const blog = await getRecentPosts(SITE.featuredPostCount)
+import SocialIcons from '@/components/SocialIcons.astro'
+import { SOCIAL_LINKS } from '@/consts'
 ---
 
 <Layout class="max-w-3xl">
   <PageHead slot="head" title="Home" />
-<div class="grid grid-cols-7 grid-rows-4 md:grid-rows-10 gap-3 max-w-[65rem] mx-auto">
-    <div class="col-span-7 row-auto md:col-span-4 md:row-span-3 border-1 rounded-lg">
+<div class="grid grid-cols-10 grid-rows-1 md:grid-rows-3 gap-2 max-w-[65rem] mx-auto">
+    <div class="col-span-10 row-auto md:col-span-7 md:row-span-3  rounded-lg">
       <div class="flex flex-col space-y-1.5 p-6">
         <h3 class="text-3xl leading-none font-medium">Hi, my name is Dawson :) </h3>
       <p class="text-muted-foreground text-sm">
@@ -35,14 +35,15 @@ const blog = await getRecentPosts(SITE.featuredPostCount)
           underline>Computational Education Research Lab (CERL)</Link
         >.
       </p>
+      <SocialIcons links={SOCIAL_LINKS} />
+
     </div>
     </div>
 
-    <div class="col-start-1 col-span-7 md:col-span-3 md:row-span-3 md:col-start-5 rounded-lg overflow-hidden relative">
+    <div class="col-start-1 col-span-10 md:col-span-3 md:row-span-3 md:col-start-8 rounded-lg overflow-hidden relative max-w-[20rem] flex center items-center">
 
     <Carousel />
 
     </div>
 </div>  
-
 </Layout>
