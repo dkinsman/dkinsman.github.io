@@ -13,7 +13,7 @@ export const SITE: Site = {
 
 export const NAV_LINKS: SocialLink[] = [
   {
-    href: '/research.astro',
+    href: '/research',
     label: 'Research',
   },
   {href:'/files/resume.pdf',
