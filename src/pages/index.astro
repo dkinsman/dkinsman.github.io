@@ -9,6 +9,7 @@ import { Image } from 'astro:assets'
 import Carousel from '@/components/Carousel.astro'
 import SocialIcons from '@/components/SocialIcons.astro'
 import { SOCIAL_LINKS } from '@/consts'
+import { cn } from '@/lib/utils'
 ---
 
 <Layout class="max-w-3xl">
@@ -43,7 +44,6 @@ import { SOCIAL_LINKS } from '@/consts'
     <div class="col-start-1 col-span-10 md:col-span-3 md:row-span-3 md:col-start-8 rounded-lg overflow-hidden relative max-w-[20rem] flex center items-center">
 
     <Carousel />
-
     </div>
 </div>  
 </Layout>
