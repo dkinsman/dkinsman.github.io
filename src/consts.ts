@@ -13,19 +13,19 @@ export const SITE: Site = {
 
 export const NAV_LINKS: SocialLink[] = [
   {
-    href: '/research',
-    label: 'research',
+    href: '/research.astro',
+    label: 'Research',
   },
   {href:'/files/resume.pdf',
-    label:'resume'
+    label:'Resume'
   },
   {
     href: '/blog',
-    label: 'blog',
+    label: 'Blog',
   },
   {
     href: '/photos',
-    label: 'photos',
+    label: 'Photos',
   },
   
 ]
@@ -33,19 +33,19 @@ export const NAV_LINKS: SocialLink[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     href: 'https://github.com/dkinsman',
-    label: 'github',
+    label: 'GitHub',
   },
   {
     href: 'mailto:dkinsman@msu.edu',
-    label: 'email',
+    label: 'Email',
   },
   {
     href: "https://www.linkedin.com/in/dawson-kinsman-a677951b4/",
-    label: "linkedin"
+    label: "LinkedIn"
   },
   {
     href:'https://orcid.org/0009-0007-5703-5027',
-    label:"orcid"
+    label:"ORCiD"
   }
   // {
   //   href: '/rss.xml',
@@ -55,9 +55,9 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 export const ICON_MAP: IconMap = {
   Website: 'lucide:globe',
-  github: 'lucide:github',
-  linkedin: 'lucide:linkedin',
-  email: 'lucide:mail',
+  GitHub: 'lucide:github',
+  LinkedIn: 'lucide:linkedin',
+  Email: 'lucide:mail',
   RSS: 'lucide:rss',
-  orcid: "lucide:library-big"
+  ORCiD: "lucide:library-big"
 }
