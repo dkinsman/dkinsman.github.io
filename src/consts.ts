@@ -16,7 +16,7 @@ export const NAV_LINKS: SocialLink[] = [
     href: '/research',
     label: 'research',
   },
-  {href:'/resume',
+  {href:'/files/resume.pdf',
     label:'resume'
   },
   {
@@ -33,19 +33,19 @@ export const NAV_LINKS: SocialLink[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     href: 'https://github.com/dkinsman',
-    label: 'GitHub',
+    label: 'github',
   },
   {
     href: 'mailto:dkinsman@msu.edu',
-    label: 'Email',
+    label: 'email',
   },
   {
     href: "https://www.linkedin.com/in/dawson-kinsman-a677951b4/",
-    label: "LinkedIn"
+    label: "linkedin"
   },
   {
     href:'https://orcid.org/0009-0007-5703-5027',
-    label:"Library"
+    label:"orcid"
   }
   // {
   //   href: '/rss.xml',
@@ -55,10 +55,9 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 export const ICON_MAP: IconMap = {
   Website: 'lucide:globe',
-  GitHub: 'lucide:github',
-  LinkedIn: 'lucide:linkedin',
-  Twitter: 'lucide:twitter',
-  Email: 'lucide:mail',
+  github: 'lucide:github',
+  linkedin: 'lucide:linkedin',
+  email: 'lucide:mail',
   RSS: 'lucide:rss',
-  Library: "lucide:library-big"
+  orcid: "lucide:library-big"
 }
