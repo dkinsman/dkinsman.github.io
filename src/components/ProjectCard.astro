@@ -16,11 +16,12 @@ const { project } = Astro.props
 <div
   class="hover:bg-muted/50 rounded-xl border p-4 transition-colors duration-300 ease-in-out"
 >
-  <Link
+  <!-- <Link
     href={project.data.link}
     class="flex flex-col gap-4 sm:flex-row"
     external
-  >
+  > -->
+    <div class="flex flex-col gap-4 sm:flex-row">
     {
       project.data.image && (
         <div class="w-full sm:max-w-3xs sm:shrink-0">
@@ -66,5 +67,6 @@ const { project } = Astro.props
         )
       }
     </div>
-  </Link>
+    </div>
+  <!-- </Link> -->
 </div>
