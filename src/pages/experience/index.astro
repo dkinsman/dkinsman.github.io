@@ -1,0 +1,40 @@
+---
+import BlogCard from '@/components/BlogCard.astro'
+import Link from '@/components/Link.astro'
+import PageHead from '@/components/PageHead.astro'
+import { Button } from '@/components/ui/button'
+import { SITE } from '@/consts'
+import Layout from '@/layouts/Layout-center.astro'
+import { Image } from 'astro:assets'
+import Carousel from '@/components/Carousel.astro'
+import SocialIcons from '@/components/SocialIcons.astro'
+import { SOCIAL_LINKS } from '@/consts'
+import { cn } from '@/lib/utils'
+import { Separator } from '@/components/ui/separator'
+---
+
+<Layout class="max-w-3xl">
+  <PageHead slot="head" title="Experience" />
+
+  <Button
+  variant="outline"
+  size="sm"
+  id="Resume"
+  title="Resume"
+  aria-label="Resume"
+>
+<a href="/files/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+</Button> 
+
+<!-- <Separator orientation="vertical" className="h-4!" /> 
+<Button
+  variant="outline"
+  size="sm"
+  id="Resume"
+  title="Resume"
+  aria-label="Resume"
+>
+<a href="/files/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+</Button> -->
+
+</Layout>

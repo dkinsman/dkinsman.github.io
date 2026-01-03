@@ -2,7 +2,7 @@
 import BlogCard from '@/components/BlogCard.astro'
 import Link from '@/components/Link.astro'
 import PageHead from '@/components/PageHead.astro'
-import { buttonVariants } from '@/components/ui/button'
+import { buttonVariants, Button} from '@/components/ui/button'
 import { SITE } from '@/consts'
 import Layout from '@/layouts/Layout-center.astro'
 import { Image } from 'astro:assets'
@@ -35,6 +35,7 @@ import { cn } from '@/lib/utils'
           underline>Computational Education Research Lab (CERL)</Link
         >.
       </p>
+
       <SocialIcons links={SOCIAL_LINKS} />
 
     </div>
