@@ -1,0 +1,68 @@
+---
+import ProjectCard from '@/components/ProjectCard.astro'
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import PageHead from '@/components/PageHead.astro'
+import PaginationComponent from '@/components/ui/pagination'
+import { SITE } from '@/consts'
+import Layout from '@/layouts/Layout.astro'
+import { getAllProjects, groupProjectsByYear } from '@/lib/data-utils'
+import type { PaginateFunction } from 'astro'
+
+export async function getStaticPaths({
+  paginate,
+}: {
+  paginate: PaginateFunction
+}) {
+  const allPosts = await getAllProjects()
+  return paginate(allPosts, { pageSize: SITE.postsPerPage })
+}
+
+const { page } = Astro.props
+
+const postsByYear = groupProjectsByYear(page.data)
+const years = Object.keys(postsByYear).sort((a, b) => parseInt(b) - parseInt(a))
+---
+
+<Layout class="max-w-3xl">
+  <PageHead slot="head" title="Research" />
+
+  <section>
+        <blockquote class="text-muted-foreground italic text-xl">
+          “If there is a book that you want to read, but it hasn’t been written yet, you must be the one to write it.”
+        </blockquote> 
+        <blockquote class="text-muted-foreground text-l italic" style="text-align: center">
+        &mdash; Toni Morrison
+        </blockquote>
+  </section>
+
+  <Breadcrumbs
+    items={[
+      { label: 'Research', href: '/research', icon: 'lucide:library-big' },
+      { label: `Page ${page.currentPage}`, icon: 'lucide:book-copy' },
+    ]}
+  />
+
+  <div class="flex min-h-[calc(100vh-18rem)] flex-col gap-y-8">
+    {
+      years.map((year) => (
+        <section class="flex flex-col gap-y-4">
+          <div class="font-medium">{year}</div>
+          <ul class="flex flex-col gap-4">
+            {postsByYear[year].map((post) => (
+              <li>
+                <ProjectCard entry={post} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+
+  <PaginationComponent
+    currentPage={page.currentPage}
+    totalPages={page.lastPage}
+    baseUrl="/research/"
+    client:load
+  />
+</Layout>

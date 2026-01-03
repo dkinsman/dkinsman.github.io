@@ -22,7 +22,7 @@ export async function getAllPostsAndSubposts(): Promise<
 }
 
 export async function getAllProjects(): Promise<CollectionEntry<'projects'>[]> {
-  const projects = await getCollection('projects')
+  const projects = await getCollection('research')
   return projects.sort((a, b) => {
     const dateA = a.data.startDate?.getTime() || 0
     const dateB = b.data.startDate?.getTime() || 0
@@ -163,6 +163,19 @@ export function groupPostsByYear(
   return posts.reduce(
     (acc: Record<string, CollectionEntry<'blog'>[]>, post) => {
       const year = post.data.date.getFullYear().toString()
+      ;(acc[year] ??= []).push(post)
+      return acc
+    },
+    {},
+  )
+}
+
+export function groupProjectsByYear(
+  posts: CollectionEntry<'research'>[],
+): Record<string, CollectionEntry<'research'>[]> {
+  return posts.reduce(
+    (acc: Record<string, CollectionEntry<'research'>[]>, post) => {
+      const year = post.data.endDate.getFullYear().toString()
       ;(acc[year] ??= []).push(post)
       return acc
     },
