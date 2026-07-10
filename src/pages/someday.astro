@@ -1,0 +1,29 @@
+---
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import Link from '@/components/Link.astro'
+import PageHead from '@/components/PageHead.astro'
+import { buttonVariants } from '@/components/ui/button'
+import Layout from '@/layouts/Layout.astro'
+import { cn } from '@/lib/utils'
+---
+
+<Layout class="max-w-3xl">
+  <PageHead slot="head" title="Someday" />
+
+  <section
+    class="flex flex-col items-center justify-center gap-y-4 text-center"
+  >
+    <div>
+      <h1 class="mb-4 text-3xl font-medium"><u><i>Someday</i></u>, I want to</h1>
+    </div>
+    </section>
+
+    <div>
+      <h2 class="mb-1 text-lg font-medium"> July 9, 2026</h2>
+    &nbsp; - &nbsp; obtain my doctoral degree :) </br>
+    &nbsp; - &nbsp; run in one of the Detroit Free Press races </br>
+    &nbsp; - &nbsp; develop a crafting hobby</br>
+    &nbsp; - &nbsp; travel to China with my family.</br>
+    </div>
+  </section>
+</Layout>
