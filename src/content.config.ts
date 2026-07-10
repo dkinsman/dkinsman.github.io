@@ -32,18 +32,25 @@ const authors = defineCollection({
   }),
 })
 
-const projects = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/projects' }),
+const research = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/research' }),
   schema: ({ image }) =>
     z.object({
-      name: z.string(),
+      title: z.string(),
       description: z.string(),
-      tags: z.array(z.string()),
-      image: image(),
-      link: z.string().url(),
-      startDate: z.coerce.date().optional(),
-      endDate: z.coerce.date().optional(),
+      date: z.coerce.date().optional(),
+      order: z.number().optional(),
+      image: image().optional(),
+      tags: z.array(z.string()).optional(),
+      draft: z.boolean().optional(),
+      // name: z.string(),
+      // description: z.string(),
+      // tags: z.array(z.string()),
+      // image: image(),
+      // link: z.string().url(),
+      // startDate: z.coerce.date().optional(),
+      // endDate: z.coerce.date().optional()
     }),
 })
 
-export const collections = { blog, authors, projects }
+export const collections = { blog, authors, research}

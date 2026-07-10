@@ -42,7 +42,22 @@ import Layout from '@/layouts/Layout-center.astro'
             underline>Computational Education Research Lab (CERL)</Link
           >.
         </p>
-        <Button
+        <br>
+        <p class="text-muted-foreground mb-2 text-sm">
+          <i>What am I up to <Link
+            href="now"
+            underline>now</Link
+          >?
+            </i>
+            <br>
+          <i>What do I want to do <Link
+            href="someday"
+            underline>someday</Link
+          > ?
+            </i>
+        </p>
+
+        <!-- <Button
           variant="outline"
           size="sm"
           id="Resume"
@@ -64,7 +79,8 @@ import Layout from '@/layouts/Layout-center.astro'
           <a href="/files/cv.pdf" target="_blank" rel="noopener noreferrer"
             >CV</a
           >
-        </Button>
+        </Button> -->
+
         <div class="mb-2"></div>
         <SocialIcons links={SOCIAL_LINKS} />
         

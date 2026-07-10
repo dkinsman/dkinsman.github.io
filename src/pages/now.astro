@@ -1,0 +1,30 @@
+---
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import Link from '@/components/Link.astro'
+import PageHead from '@/components/PageHead.astro'
+import { buttonVariants } from '@/components/ui/button'
+import Layout from '@/layouts/Layout.astro'
+import { cn } from '@/lib/utils'
+---
+
+<Layout class="max-w-3xl">
+  <PageHead slot="head" title="Now" />
+
+  <section
+    class="flex flex-col items-center justify-center gap-y-4 text-center"
+  >
+    <div>
+      <h1 class="mb-4 text-3xl font-medium">Here, in the <u><i>now</i></u>, I am</h1>
+    </div>
+    </section>
+
+    <div>
+      <h2 class="mb-1 text-lg font-medium"> July 9, 2026</h2>
+    &nbsp; - &nbsp; finishing a roadtrip across the U.S. from Michigan to California </br>
+    &nbsp; - &nbsp; working at MSU towards my comprehensive exam </br>
+    &nbsp; - &nbsp;  forming a habit of reading again </br>
+    &nbsp; - &nbsp;  occasionally going to the gym and rock climbing with friends</br>
+    &nbsp; - &nbsp; slowly chipping away at the behemouth of a website I want to build for myself. </br>
+    </div>
+  </section>
+</Layout>
